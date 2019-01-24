@@ -6,13 +6,59 @@
 </head>
 <body>
 <header>
-
+  <h1>INSCREVA-SE</h1>
 </header>
 <main>
-
+  <section>
+    <p>
+      Faça parte desse time se inscrevendo na próxima edição do programa de
+       bolsas
+     </p>
+     <form class="" action="index.html" method="post">
+       <div class="">
+         <label for="">Nome Completo
+           <input type="text" name="nome"request>
+         </label> <br>
+         <label for="">E-mail
+          <input type="email" name="email">
+         </label><br>
+      </div>
+       <div>
+         <label>Maior disponibilidade <br>
+           <input type="radio" name="disponibilidade" value="manha">manhã
+           <input type="radio" name="disponibilidade" value="tarde">tarde
+           <input type="radio" name="disponibilidade" value="noite">noite
+           <input type="radio" name="disponibilidade" value="personalizar">personalizar
+           <input type="text" name="disponibilidadePersonalizada" hidden>
+         </label>
+      </div>
+       <div class="">
+         <label>Interesses <br>
+           <input type="checkbox" name="interesse1" value="ia">idea
+           <input type="checkbox" name="interesse2" value="big data"> Big Data
+           <input type="checkbox" name="interesse3" value="machine leatning"> Machine Learning
+           <input type="checkbox" name="interesse4" value="outro"> Outro
+           <input type="text" name="interesseOutro" hidden>
+           </label>
+       </div>
+       <div>
+         <label>Por que você quer particapar? <br>
+           <textarea name="porque" rows="8" cols="80"></textarea>
+         </label>
+      </div>
+      <button type="submit" name="button">ENVIAR MENSAGEM</button>
+     </form>
+  </section>
 </main>
 <footer>
-
+  <footer>
+    <h2>Compasso Tecnologia LTDA</h2>
+    <ul>
+      <li>Contato</li>
+      <li>Sobre</li>
+      <li>Link</li>
+    </ul>
+  </footer>
 </footer>
 </body>
 </html>
