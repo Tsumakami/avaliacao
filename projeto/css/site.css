@@ -21,7 +21,7 @@ h2,
     font-family: "Open Sans Condensed";
     color: white;
     text-shadow: 3px 3px #000;
-    font-size: 2em;
+    font-size: 3em;
     text-align: center;
 }
 
@@ -78,6 +78,9 @@ main p {
     width: 100%;
 }
 
+.rodape h2{
+  text-align: left;
+}
 .container {
     width: 80ch;
     margin-left: auto;
