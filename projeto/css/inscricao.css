@@ -1,0 +1,25 @@
+legend,
+label[for="mensagem"] {
+    font-weight: bold;
+    margin-top: 1em;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    padding: .25em .5em;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+input:invalid {
+    box-shadow: 0 0 3px red;
+}
+input:focus,
+textarea:focus {
+    background-color: #FFD;
+}
+h1{
+  margin-top: -1em;
+}
