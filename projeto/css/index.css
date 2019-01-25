@@ -19,7 +19,7 @@ html,body {
     -webkit-transform-style: preserve-3d;
             transform-style: preserve-3d;
     position: relative;
-    height: 30%;
+    height: 40%;
 }
 .palavras-cabecalhos {
     -webkit-transform-style: preserve-3d;
@@ -109,7 +109,7 @@ html,body {
 }
 .bigData{
     top: 40%;
-    left: 60%;
+    left: 62%;
     -webkit-transform: translate(-50%, -50%) translateZ(2px) rotate(10deg) scale(.25);
             transform: translate(-50%, -50%) translateZ(2px) rotate(10deg) scale(.25);
     opacity: .6;
@@ -120,4 +120,72 @@ html,body {
   background-size: 100% 1px;
   background-repeat: no-repeat;
   background-position: top center;
+}
+
+
+.vertentes {
+    background-color: #0A355F;
+    background-size: 20px 20px;
+    background-attachment: fixed;
+    padding: 2em;
+}
+.vertentes h2 {
+    text-transform: uppercase;
+    margin-bottom: .5em;
+
+}
+
+.vertentes ul {
+    display: -webkit-flex;
+    display:         flex;
+}
+.vertentes li {
+    -webkit-flex: auto;
+            flex: auto;
+    border: 4px solid #000;
+    width: 10%;
+    height: 8%;
+}
+.vertentes li:first-child {
+    order: 2;
+    transform: scale(1.2);
+}
+.vertentes li:nth-child(2) {
+    order: 1;
+}
+.vertentes li:nth-child(3) {
+    order: 3;
+}
+.vertentes img {
+    width: 100%;
+    display: block;
+    height: 100%;
+}
+@-webkit-keyframes aparece {
+    from {
+        opacity: 0;
+        transform: scale(0.001);
+    }
+}
+@keyframes aparece {
+    from {
+        opacity: 0;
+        transform: scale(0.001);
+    }
+}
+@keyframes flutua {
+    from {
+        top: -5px;
+    }
+    to {
+        top: 5px;
+    }
+}
+@-webkit-keyframes flutua {
+    from {
+        top: -5px;
+    }
+    to {
+        top: 5px;
+    }
 }
