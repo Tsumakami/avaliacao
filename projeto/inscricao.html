@@ -4,30 +4,31 @@
 <meta charset=”UTF-8”>
 <title>Compasso Labs</title>
 <link rel="shortcut icon" href="img/favicon.jpg">
-<link rel="stylesheet" href="/css/reset.css">
-<link rel="stylesheet" href="/css/site.css">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/site.css">
+<link rel="stylesheet" href="css/inscricao.css">
 <link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Open+Sans|Open+Sans+Condensed:300|Shadows+Into+Light" rel="stylesheet">
 </head>
 <body>
-<header>
+<header class="cabecalho">
   <h1>INSCREVA-SE</h1>
 </header>
 <main>
-  <section>
-    <p>
+  <section class="formulario">
+    <legend>
       Faça parte desse time se inscrevendo na próxima edição do programa de
        bolsas
-     </p>
+     </legend>
      <form class="" action="index.html" method="post">
-       <div class="">
-         <label for="">Nome Completo
+       <fieldset>
+         <label for="">Nome Completo</label>
            <input type="text" name="nome"request>
-         </label> <br>
+          <br>
          <label for="">E-mail
           <input type="email" name="email">
          </label><br>
-      </div>
-       <div>
+      </fieldset>
+       <fieldset>
          <label>Maior disponibilidade <br>
            <input type="radio" name="disponibilidade" value="manha">manhã
            <input type="radio" name="disponibilidade" value="tarde">tarde
@@ -35,8 +36,8 @@
            <input type="radio" name="disponibilidade" value="personalizar">personalizar
            <input type="text" name="disponibilidadePersonalizada" hidden>
          </label>
-      </div>
-       <div class="">
+      </fieldset>
+       <fieldset>
          <label>Interesses <br>
            <input type="checkbox" name="interesse1" value="ia">idea
            <input type="checkbox" name="interesse2" value="big data"> Big Data
@@ -44,23 +45,25 @@
            <input type="checkbox" name="interesse4" value="outro"> Outro
            <input type="text" name="interesseOutro" hidden>
            </label>
-       </div>
-       <div>
+       </fieldset>
+       <fieldset>
          <label>Por que você quer particapar? <br>
            <textarea name="porque" rows="8" cols="80"></textarea>
          </label>
-      </div>
-      <button type="submit" name="button">ENVIAR MENSAGEM</button>
+      </fieldset>
+      <button class="botao" type="submit" name="button">ENVIAR MENSAGEM</button>
      </form>
   </section>
 </main>
 <footer>
-  <footer>
+  <footer class="rodape">
     <h2>Compasso Tecnologia LTDA</h2>
     <ul>
-      <li>Contato</li>
-      <li>Sobre</li>
-      <li>Link</li>
+      <li>
+        <a href="#">Contato</a>
+      </li>
+      <li><a href="#">Sobre</a></li>
+      <li><a href="#">Link</a></li>
     </ul>
   </footer>
 </footer>
