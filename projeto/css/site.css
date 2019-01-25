@@ -1,0 +1,121 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color:#F2FFFC;
+    font-size: 120%;
+    line-height: 1.5;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h1,
+h2,
+.subtitulo-principal {
+    font-family: "Open Sans";
+    color: white;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 3em;
+    /*text-shadow: 3px 3px #000;*/
+}
+.labs {
+  font-family: "Shadows into light";
+}
+.cabecalho {
+    text-align: center;
+    background-color:#0A355F;
+    color: #FFF;
+    padding: 2rem;
+    width: 100%;
+}
+
+.vertentes{
+  text-align: center;
+  background-color:#0A355F;
+  padding: 2rem;
+  width: 100%;
+}
+.subtitulo-texto {
+    font-size: 1.5em;
+    clear: both;
+}
+
+main a {
+    color: #0A355F;
+}
+
+main a:hover,
+main a:focus,
+footer a:focus,
+footer a:hover {
+    color: white;
+}
+
+main p {
+    text-align: justify;
+    margin: 1em 0;
+}
+
+.navegacao-site {
+    text-align: center;
+    background-color: #3C1D3D;
+    color: #F2FFFC;
+    padding: 1em;
+}
+
+.navegacao-site a {
+    color: inherit;
+    font-family: "Open Sans Condensed", "Arial", sans-serif;
+    text-transform: lowercase;
+}
+
+.navegacao-site a:hover,
+.navegacao-site a:focus {
+    text-shadow: 0 0 2px pink;
+}
+
+.navegacao-site h1 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.rodape{
+    background-color: #222222;
+    padding: 1em;
+    clear: both;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.container {
+    width: 80ch;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em 0;
+}
+
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
+
+main {
+    padding-bottom: 4em;
+    flex-grow: 1;
+}
+
+.navegacao-site {
+    border-left: .5em solid black;
+    box-sizing: border-box;
+}
+
+.navegacao-site {
+    width: calc(0.9 * 300px);
+    padding-top: calc(300px + 1em);
+}
