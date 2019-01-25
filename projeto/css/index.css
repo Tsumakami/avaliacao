@@ -15,6 +15,10 @@ html,body {
     overflow-x: hidden;
     height: 100%;
 }
+.labs {
+  font-family: "Shadows into light";
+  font-style: italic;
+}
 .cabecalho {
     -webkit-transform-style: preserve-3d;
             transform-style: preserve-3d;
@@ -78,7 +82,7 @@ html,body {
             animation: aparece 2s;
 }
 .artificialIntelligence {
-    top: 50%;
+    top: 40%;
     left: 60%;
     -webkit-transform: translate(-50%, -50%) translateZ(4px) rotate(-5deg) scale(.25);
             transform: translate(-50%, -50%) translateZ(4px) rotate(-5deg) scale(.25);
@@ -144,7 +148,10 @@ html,body {
     -webkit-transform: translate(-50%, -50%) translateZ(1px) rotate(5deg) scale(.25);
             transform: translate(-50%, -50%) translateZ(1px) rotate(5deg) scale(.25);
     opacity: .3;
+}.labs {
+  font-family: "Shadows into light";
 }
+
 .bigData{
     top: 40%;
     left: 62%;
