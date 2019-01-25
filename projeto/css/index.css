@@ -21,6 +21,44 @@ html,body {
     position: relative;
     height: 40%;
 }
+.botao {
+    font-size: 1.25em;
+    background-color: #0A355F;
+    color: #FFF;
+    padding: .5em;
+    width: 40ch;
+    margin: 2em auto;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    transition: .5s;
+}
+.botao:focus,
+.botao:hover {
+    background-color: white;
+    color:  #0A355F;
+    border: 2px solid #0A355F;
+    /*box-shadow: 0 0 1em #FA9;*/
+}
+.botao-vertentes{
+  font-size: 1.25em;
+  background-color: white;
+  color: #0A355F;
+  padding: .5em;
+  width: 40ch;
+  margin: 2em auto;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  transition: .5s;
+}
+.botao-vertentes:focus,
+.botao-vertentes:hover {
+    background-color: #0A355F;
+    color:  white;
+    border: 2px solid white;
+    /*box-shadow: 0 0 1em #FA9;*/
+}
 .palavras-cabecalhos {
     -webkit-transform-style: preserve-3d;
             transform-style: preserve-3d;
