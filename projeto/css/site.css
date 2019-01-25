@@ -35,7 +35,12 @@ h1 {
 }
 
 
+
 .cabecalho {
+      -webkit-transform-style: preserve-3d;
+              transform-style: preserve-3d;
+      position: relative;
+      height: 40%;
 
 }
 
@@ -102,4 +107,23 @@ em {
 main {
     padding-bottom: 4em;
     flex-grow: 1;
+}
+.botao {
+    font-size: 1.25em;
+    background-color: #0A355F;
+    color: #FFF;
+    padding: .5em;
+    width: 40ch;
+    margin: 2em auto;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    transition: .5s;
+}
+.botao:focus,
+.botao:hover {
+    background-color: white;
+    color:  #0A355F;
+    border: 2px solid #0A355F;
+    /*box-shadow: 0 0 1em #FA9;*/
 }
