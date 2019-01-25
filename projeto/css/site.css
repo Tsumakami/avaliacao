@@ -9,16 +9,20 @@ body {
 
 h1,
 h2,
-.subtitulo-principal {
+.subtitulo {
     font-family: "Open Sans";
     color: white;
+    text-shadow: 3px 3px #000;
+    font-size: 2em;
+    text-align: center;
 }
 
 h1 {
     text-transform: uppercase;
     font-size: 3em;
-    /*text-shadow: 3px 3px #000;*/
+    text-shadow: 3px 3px #000;
 }
+
 .labs {
   font-family: "Shadows into light";
 }
@@ -33,7 +37,7 @@ h1 {
 .vertentes{
   text-align: center;
   background-color:#0A355F;
-  padding: 2rem;
+  
   width: 100%;
 }
 .subtitulo-texto {
