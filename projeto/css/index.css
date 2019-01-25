@@ -25,25 +25,7 @@ html,body {
     position: relative;
     height: 40%;
 }
-.botao {
-    font-size: 1.25em;
-    background-color: #0A355F;
-    color: #FFF;
-    padding: .5em;
-    width: 40ch;
-    margin: 2em auto;
-    display: block;
-    text-align: center;
-    text-decoration: none;
-    transition: .5s;
-}
-.botao:focus,
-.botao:hover {
-    background-color: white;
-    color:  #0A355F;
-    border: 2px solid #0A355F;
-    /*box-shadow: 0 0 1em #FA9;*/
-}
+
 .botao-vertentes{
   font-size: 1.25em;
   background-color: white;
@@ -173,6 +155,7 @@ html,body {
     background-size: 20px 20px;
     background-attachment: fixed;
     padding: 2em;
+
 }
 .vertentes h2 {
     text-transform: uppercase;
@@ -183,6 +166,7 @@ html,body {
 .vertentes ul {
     display: -webkit-flex;
     display:         flex;
+    margin-right: 5%;
 }
 .vertentes li {
     -webkit-flex: auto;
@@ -190,6 +174,7 @@ html,body {
     border: 4px solid #000;
     width: 10%;
     height: 8%;
+
 }
 .vertentes li:first-child {
     order: 2;
@@ -205,6 +190,13 @@ html,body {
     width: 100%;
     display: block;
     height: 100%;
+}
+.vertentes li:focus,
+.vertentes li:hover{
+  border: 4px solid white;
+  width: 11%;
+  height: 9%;
+  transform: scale(1.2);
 }
 @-webkit-keyframes aparece {
     from {
