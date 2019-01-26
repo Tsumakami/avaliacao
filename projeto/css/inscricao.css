@@ -1,3 +1,21 @@
+body {
+    display: block;
+    -webkit-perspective: 6px;
+            perspective: 6px;
+    -webkit-perspective-origin: 50% 160px;
+            perspective-origin: 50% 160px;
+}
+
+main {
+    width: 100%;
+    padding-bottom: 0;
+    float: none;
+}
+html,body {
+    overflow-x: hidden;
+    height: 100%;
+}
+
 legend,
 label{
     font-family: "Open Sans";
@@ -37,4 +55,7 @@ h1{
 }
 fieldset{
   padding: 0 1em 1em 0;
+}
+.cabecalho{
+  height: 20%;
 }
