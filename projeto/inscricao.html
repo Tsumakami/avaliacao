@@ -23,7 +23,7 @@
        <form class="" action="index.html" method="post">
          <fieldset>
            <label for="">Nome Completo</label>
-             <input type="text" name="nome"required autofocus>
+             <input id="nome" type="text" name="nome" required autofocus>
             <br>
            <label for="">E-mail</label>
             <input type="email" name="email" required placeholder="seu@email.com">
@@ -34,8 +34,8 @@
              <input type="radio" name="disponibilidade" value="manha">manhã
              <input type="radio" name="disponibilidade" value="tarde">tarde
              <input type="radio" name="disponibilidade" value="noite">noite
-             <input type="radio" name="disponibilidade" value="personalizar">personalizar
-             <input type="text" name="disponibilidadePersonalizada" hidden>
+             <input type="radio" id="disponibilidade" name="disponibilidade" value="personalizar">personalizar
+             <input type="text" id="personalizar" name="disponibilidadePersonalizada" hidden>
         </fieldset>
          <fieldset>
            <label><strong>Interesses </strong></label><br>
@@ -55,8 +55,7 @@
      </div>
   </section>
 </main>
-<footer>
-  <footer class="rodape">
+<footer class="rodape">
     <h2>Compasso Tecnologia LTDA</h2>
     <ul>
       <li>
@@ -65,7 +64,8 @@
       <li><a href="#">Sobre</a></li>
       <li><a href="#">Link</a></li>
     </ul>
-  </footer>
 </footer>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/valida.js"></script>
 </body>
 </html>
