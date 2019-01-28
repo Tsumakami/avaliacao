@@ -26,23 +26,23 @@
              <input id="nome" type="text" name="nome" required autofocus>
             <br>
            <label for="">E-mail</label>
-            <input type="email" name="email" required placeholder="seu@email.com">
+            <input id="email" type="email" name="email" required placeholder="seu@email.com">
             <br>
         </fieldset>
          <fieldset>
            <label><strong>Maior disponibilidade </strong></label><br>
-             <input type="radio" name="disponibilidade" value="manha">manhã
-             <input type="radio" name="disponibilidade" value="tarde">tarde
-             <input type="radio" name="disponibilidade" value="noite">noite
-             <input type="radio" id="disponibilidade" name="disponibilidade" value="personalizar">personalizar
+             <input type="radio" class="disponibilidade" name="disponibilidade" value="manha">manhã
+             <input type="radio" class="disponibilidade" name="disponibilidade" value="tarde">tarde
+             <input type="radio" class="disponibilidade" name="disponibilidade" value="noite">noite
+             <input type="radio" class="disponibilidade" name="disponibilidade" value="personalizar">personalizar
              <input type="text" id="personalizar" name="disponibilidadePersonalizada" hidden>
         </fieldset>
          <fieldset>
            <label><strong>Interesses </strong></label><br>
-             <input type="checkbox" name="interesse1" value="ia">idea
-             <input type="checkbox" name="interesse2" value="big data"> Big Data
-             <input type="checkbox" name="interesse3" value="machine leatning"> Machine Learning
-             <input type="checkbox" name="interesse4" value="outro"> Outro
+             <input type="checkbox" id="interesse1"  class="interesses" value="ia">idea
+             <input type="checkbox" id="interesse2"  class="interesses" value="big data"> Big Data
+             <input type="checkbox" id="interesse3"  class="interesses" value="machine leatning"> Machine Learning
+             <input type="checkbox" id="interesse4" class="interesses" value="outro"> Outro
              <input type="text" name="interesseOutro" hidden>
 
          </fieldset>
@@ -67,5 +67,6 @@
 </footer>
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/valida.js"></script>
+<script src="js/models/InscricaoForm.js"></script>
 </body>
 </html>
