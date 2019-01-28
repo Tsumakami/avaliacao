@@ -34,16 +34,13 @@ textarea {
     padding: .25em .10em;
     width: 100%;
     box-sizing: border-box;
-    border: 1px solid #ccc;
+    border: 1px solid #0A355F;
     margin-bottom: .8em;
 }
-input:invalid {
-    box-shadow: 0 0 3px red;
 
-}
 input:focus,
 textarea:focus {
-    background-color: #FFD;
+    background-color: #FFF;
     box-shadow: 0 0 3px #0A355F;
 }
 h1{
@@ -58,4 +55,10 @@ fieldset{
 }
 .cabecalho{
   height: 20%;
+}
+.borda-vermelha {
+    border: 3px solid red;
+}
+.borda-verde{
+  border: 3px solid green;
 }
