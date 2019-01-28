@@ -28,16 +28,22 @@ legend{
 
 input[type="text"],
 input[type="email"],
-textarea {
+textarea{
     font-family: inherit;
     font-size: 100%;
     padding: .25em .10em;
     width: 100%;
     box-sizing: border-box;
-    border: 1px solid #0A355F;
     margin-bottom: .8em;
 }
-
+/*
+input:invalid{
+  border: 3px solid red;
+}
+input:valid{
+  border: 3px solid green;
+}
+*/
 input:focus,
 textarea:focus {
     background-color: #FFF;
@@ -58,7 +64,9 @@ fieldset{
 }
 .borda-vermelha {
     border: 3px solid red;
+    box-shadow: 0 0 3px red;
 }
 .borda-verde{
   border: 3px solid green;
+  box-shadow: 0 0 3px green;
 }
