@@ -36,10 +36,10 @@ function validaEmail(){
   email.on("change", function(){
   let valor = email.val();
 
-  var parse_email = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+\.([a-z]+)?$/i;
+  var parse_email = /^[a-zA-Z0-9.!#$%&'+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])/;
 
 
-  if(valor.match(parse_email)){
+  if(parse_email.exec(valor)){
     email.removeClass("borda-vermelha");
     email.addClass("borda-verde");
 
