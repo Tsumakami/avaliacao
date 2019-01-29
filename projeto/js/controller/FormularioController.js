@@ -7,7 +7,9 @@ class FormularioController{
     this.interesses= new Array();
     this.mensagem = $("#mensagem");
 
-    for (var i=0;i<interesse.length;i++){
+
+
+    for (let i=0;i<interesse.length;i++){
          if (interesse[i].checked == true){
             this.interesses.push(interesse[i].value);
          }
@@ -16,16 +18,18 @@ class FormularioController{
   }
     geraInscricao(event){
       event.preventDefault();
-      if(validaNome() && validaEmail()){
+      console.log(getDisponibilidade(this.disponibilidade));
         let objeto = new InscricaoForm(
           this.nome.val(),
           this.email.val(),
-          this.disponibilidade.val(),
+          mostraDisponibilidade(),
           this.interesses,
           this.mensagem.val()
         );
-      }
-      return console.log(objeto);
+      let meuJson = JSON.stringify(objeto);
+
+      return console.log(meuJson);
+
     }
 
 
