@@ -1,11 +1,18 @@
-
 let nome = $("#nome");
 let email = $("#email");
-/*
 let disponibilidade = $(".disponibilidade");
-let interesses = $(".interesses");
+/*
+let interesse = $(".interesses");
+let interesses= new Array();
+let mensagem = $("#mensagem");
 
 
+
+function geraJSON(objeto){
+  let myjson = JSON.stringfy(objeto);
+
+  return myjson;
+}
 
 */
 
@@ -31,7 +38,6 @@ function validaNome(){
 }
 validaNome();
 
-
 function validaEmail(){
   email.on("change", function(){
   let valor = email.val();
@@ -54,25 +60,29 @@ function validaEmail(){
 });
 }
 validaEmail();
-/*
-var objeto = new InscricaoForm();
 
+function mostraPersonalizar(){
+  var disponibilidade = $(".disponibilidade");
+  disponibilidade.on("input", function(){
+    if(disponibilidade.is(":checked") == true) {
+      $("#personalizar").attr("hidden", false);
+    } else {
+      $("#personalizar").attr("hidden", true);
+    }
+  });
+}
+mostraPersonalizar();
 
-var disponibilidade = $(".disponibilidade");
-disponibilidade.on("click", function(){
-  if(disponibilidade.is(":checked") == true) {
-    $("#personalizar").attr("hidden", false);
-  } else {
-    $("#personalizar").attr("hidden", true);
-  }
-});
+function mostraOutros(){
+  var outro = $("#outro");
+  outro.on("input", function(){
+    if(outro.is(":checked") == true) {
+      $("#Interesses").attr("hidden", false);
+    } else {
+      $("#Interesses").attr("hidden", true);
+    }
+  });
 
-var outro = $("#outro");
-outro.on("click", function(){
-  if(outro.is(":checked") == true) {
-    $("#Interesses").attr("hidden", false);
-  } else {
-    $("#Interesses").attr("hidden", true);
-  }
-});
-*/
+}
+
+mostraOutros();

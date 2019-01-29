@@ -1,24 +1,24 @@
 class InscricaoForm {
   constructor(nome, email, disponibilidade, interesses, mensagem) {
-    this.nome;
-    this.email;
-    this.disponibilidade;
-    this.interesses;
-    this.mensagem;
+    this.nome = nome;
+    this.email = email;
+    this.disponibilidade = disponibilidade;
+    this.interesses= interesses;
+    this.mensagem = mensagem;
   }
-  get nome(){
+  nome(){
     return this.nome;
   }
-  get email(){
+  email(){
     return this.email;
   }
-  get disponibilidade(){
+  disponibilidade(){
     return this.disponibilidade;
   }
-  get interesses(){
+  interesses(){
     return this.interesses;
   }
-  get mensagem(){
+  mensagem(){
     return this.mensagem;
   }
 
