@@ -61,17 +61,36 @@ function validaEmail(){
 }
 validaEmail();
 
-function mostraPersonalizar(){
-  var disponibilidade = $(".disponibilidade");
-  disponibilidade.on("input", function(){
-    if(disponibilidade.is(":checked") == true) {
+function mostraDisponibilidade(){
+  var disponibilidade = $("input[type='radio']");
+  disponibilidade.on("click", function() {
+    if($(this).val() == "personalizar"){
       $("#personalizar").attr("hidden", false);
-    } else {
+      return $(this).val();
+    }else{
       $("#personalizar").attr("hidden", true);
+      return $(this).val();
     }
+
   });
 }
-mostraPersonalizar();
+mostraDisponibilidade();
+
+function getDisponibilidade(disp){
+  console.log(disp.length);
+  for(let i =0; i < disp.length;i++){
+    console.log(disp[i].value);
+    if(disp[i] == true){
+      if(disp[i].value == "personalizar"){
+        return $("#personalizar").value;
+      }else{
+        return disp[i].value;
+      }
+    }else{
+      return;
+    }
+  }
+}
 
 function mostraOutros(){
   var outro = $("#outro");
@@ -84,5 +103,12 @@ function mostraOutros(){
   });
 
 }
-
 mostraOutros();
+
+function habilita() {
+  if (radio) {
+    $('.botao').removeClass("disable");
+  } else {
+    $('.botao').addClass("disable");
+  }
+}
