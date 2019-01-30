@@ -2,11 +2,9 @@ class FormularioController{
   constructor(){
     this.nome = $("#nome");
     this.email = $("#email");
-    this.disponibilidade = $(".disponibilidade");
     let interesse = $(".interesses");
     this.interesses= new Array();
     this.mensagem = $("#mensagem");
-
 
 
     for (let i=0;i<interesse.length;i++){
@@ -17,12 +15,23 @@ class FormularioController{
 
   }
     geraInscricao(event){
+      let disponibilidades = $(".disponibilidade");
       event.preventDefault();
-      console.log(getDisponibilidade(this.disponibilidade));
-        let objeto = new InscricaoForm(
+      //console.log(this.disponibilidade);
+      for(let i=0;i < disponibilidades.length;i++){
+        if(disponibilidades[i].checked){
+          if(disponibilidades[i].value == "personalizar"){
+            this.disponibilidade = $("#personalizar").val();
+          }else{
+            this.disponibilidade = disponibilidades[i].value;
+          }
+        }
+      }
+
+      let objeto = new InscricaoForm(
           this.nome.val(),
           this.email.val(),
-          mostraDisponibilidade(),
+          this.disponibilidade,
           this.interesses,
           this.mensagem.val()
         );
