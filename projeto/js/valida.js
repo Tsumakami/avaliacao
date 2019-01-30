@@ -1,20 +1,7 @@
 let nome = $("#nome");
 let email = $("#email");
 let disponibilidade = $(".disponibilidade");
-/*
-let interesse = $(".interesses");
-let interesses= new Array();
-let mensagem = $("#mensagem");
 
-
-
-function geraJSON(objeto){
-  let myjson = JSON.stringfy(objeto);
-
-  return myjson;
-}
-
-*/
 
 function validaNome(){
   nome.on("change", function(){
@@ -92,4 +79,14 @@ function habilita() {
   } else {
     $('.botao').addClass("disable");
   }
+}
+
+function sucesso(email){
+  let formulario = $("form");
+  let formulario1 =$("#formulariodps");
+  let p = document.getElementById("campo1");
+  formulario.addClass("formularioGugu");
+  formulario1.removeClass("formularioGugu");
+  let text = email.val();
+  p.innerHTML = "Inscrição enviada. Aguarde novos detalhes em seu e-mail "+ text;
 }
