@@ -1,7 +1,7 @@
 let nome = $("#nome");
 let email = $("#email");
 let disponibilidade = $(".disponibilidade");
-
+let mensagem = $("#mensagem");
 
 function validaNome(){
   nome.on("change", function(){
@@ -73,13 +73,27 @@ function mostraOutros(){
 }
 mostraOutros();
 
-function habilita() {
-  if (radio) {
-    $('.botao').removeClass("disable");
-  } else {
-    $('.botao').addClass("disable");
+function validaMensagem(){
+  mensagem.on("change", function(){
+  var valor = mensagem.val();
+  var teste = valor.length - 1;
+
+
+  if(teste >= 140){
+    mensagem.removeClass("borda-vermelha");
+    mensagem.addClass("borda-verde");
+
+    return true;
+
+  }else{
+    mensagem.removeClass("borda-verde");
+    mensagem.addClass("borda-vermelha");
+    return false;
   }
+
+});
 }
+validaMensagem();
 
 function sucesso(email){
   let formulario = $("form");
