@@ -3,10 +3,9 @@ class FormularioController{
     this.nome = $("#nome");
     this.email = $("#email");
     this.interesses= new Array();
-
     this.mensagem = $("#mensagem");
 
-
+    var teste = $("form");
 
 
   }
@@ -43,6 +42,7 @@ class FormularioController{
           this.interesses,
           this.mensagem.val()
         );
+      sucesso(this.email);
       let meuJson = JSON.stringify(objeto);
 
       return console.log(meuJson);
