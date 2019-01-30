@@ -70,3 +70,7 @@ fieldset{
   border: 3px solid green;
   box-shadow: 0 0 3px green;
 }
+.disable {
+  pointer-events: none;
+  background-color: gray;
+}

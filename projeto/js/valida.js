@@ -1,11 +1,18 @@
-
 let nome = $("#nome");
 let email = $("#email");
-/*
 let disponibilidade = $(".disponibilidade");
-let interesses = $(".interesses");
+/*
+let interesse = $(".interesses");
+let interesses= new Array();
+let mensagem = $("#mensagem");
 
 
+
+function geraJSON(objeto){
+  let myjson = JSON.stringfy(objeto);
+
+  return myjson;
+}
 
 */
 
@@ -31,7 +38,6 @@ function validaNome(){
 }
 validaNome();
 
-
 function validaEmail(){
   email.on("change", function(){
   let valor = email.val();
@@ -54,25 +60,55 @@ function validaEmail(){
 });
 }
 validaEmail();
-/*
-var objeto = new InscricaoForm();
 
+function mostraDisponibilidade(){
+  var disponibilidade = $("input[type='radio']");
+  disponibilidade.on("click", function() {
+    if($(this).val() == "personalizar"){
+      $("#personalizar").attr("hidden", false);
+      return $(this).val();
+    }else{
+      $("#personalizar").attr("hidden", true);
+      return $(this).val();
+    }
 
-var disponibilidade = $(".disponibilidade");
-disponibilidade.on("click", function(){
-  if(disponibilidade.is(":checked") == true) {
-    $("#personalizar").attr("hidden", false);
-  } else {
-    $("#personalizar").attr("hidden", true);
+  });
+}
+mostraDisponibilidade();
+
+function getDisponibilidade(disp){
+  console.log(disp.length);
+  for(let i =0; i < disp.length;i++){
+    console.log(disp[i].value);
+    if(disp[i] == true){
+      if(disp[i].value == "personalizar"){
+        return $("#personalizar").value;
+      }else{
+        return disp[i].value;
+      }
+    }else{
+      return;
+    }
   }
-});
+}
 
-var outro = $("#outro");
-outro.on("click", function(){
-  if(outro.is(":checked") == true) {
-    $("#Interesses").attr("hidden", false);
+function mostraOutros(){
+  var outro = $("#outro");
+  outro.on("input", function(){
+    if(outro.is(":checked") == true) {
+      $("#Interesses").attr("hidden", false);
+    } else {
+      $("#Interesses").attr("hidden", true);
+    }
+  });
+
+}
+mostraOutros();
+
+function habilita() {
+  if (radio) {
+    $('.botao').removeClass("disable");
   } else {
-    $("#Interesses").attr("hidden", true);
+    $('.botao').addClass("disable");
   }
-});
-*/
+}
