@@ -66,26 +66,20 @@ function mostraPersonalizar(){
   disponibilidade.on("click", function() {
     if($(this).val() == "personalizar"){
       $("#personalizar").attr("hidden", false);
-
     }else{
       $("#personalizar").attr("hidden", true);
-      
     }
-
   });
 }
 mostraPersonalizar();
 
-
-
-
 function mostraOutros(){
-  var outro = $("#outro");
-  outro.on("input", function(){
-    if(outro.is(":checked") == true) {
-      $("#Interesses").attr("hidden", false);
+  var outro = $("#interesse4");
+  outro.on("click", function(){
+    if(outro.is(":checked")) {
+      $("#interesseOutro").attr("hidden", false);
     } else {
-      $("#Interesses").attr("hidden", true);
+      $("#interesseOutro").attr("hidden", true);
     }
   });
 
